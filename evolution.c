@@ -1,6 +1,5 @@
 #include <stdio.h> 
 #include <SDL2/SDL.h>
-#include <glad/glad.h>
 
 int main(int argc, char *argv[]) {
     SDL_Init(SDL_INIT_EVERYTHING);
@@ -13,7 +12,7 @@ int main(int argc, char *argv[]) {
 
     if (window == NULL) {
         printf("Error initializing SDL, %s\n", SDL_GetError());
-        return -1;
+        return 1;
     }   
 
     printf("SDL Successfully initialized");
