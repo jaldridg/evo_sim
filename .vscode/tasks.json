@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "SDL2",
+            "command": "C:\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "src\\*.c",
+                "-o",
+                "build\\evo.exe",
+                "-I C:\\Users\\jacob\\Desktop\\Esquina\\Code\\Personal\\evo_sim\\src\\include",
+                "-L C:\\Users\\jacob\\Desktop\\Esquina\\Code\\Personal\\evo_sim\\src\\lib",
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2",
+                "-mwindows"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
